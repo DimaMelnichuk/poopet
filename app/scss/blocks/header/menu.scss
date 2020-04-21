@@ -5,6 +5,7 @@
 
 	@media (max-width: 1000px) {
 		position: fixed;
+		z-index: 999;
 		top: 0;
 		left: 0;
 		width: 100%;
@@ -73,18 +74,22 @@
 
 		@media (max-width: 1000px) {
 			display: block;
-			position: fixed;
+			position: absolute;
 			width: 30px;
 			height: 20px;
 			right: 20px;
 			cursor: pointer;
 			z-index: 1000;
 		}
+
 	}
 }
  
  
  @media screen and (max-width: 1000px) {
+	.menu__burger.active{
+		position: fixed;
+	}
 	.menu__burger:after,
 	.menu__burger:before {
 		content: "";

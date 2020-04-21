@@ -4,4 +4,12 @@ $(function(){
 		$(".menu__burger,.menu").toggleClass("active");
 		});
  
+
+	/***************** intro-slider ********************/
+	$('.intro__slider').slick({
+		dots: true,
+		fade: true,
+		cssEase: 'linear',
+	});
+
 });
