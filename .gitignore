@@ -1,0 +1,4 @@
+# Object file
+node_modules/*
+templates/*
+dist/*

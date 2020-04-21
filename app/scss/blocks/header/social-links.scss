@@ -1,0 +1,64 @@
+@import "../../partials/vars";
+
+.social-links {
+
+	@media (max-width: 1000px) {
+		margin-right: 50px;
+	}
+
+	@media (max-width: 430px) {
+		display: none;
+	}
+	// .social-links__list
+
+	&__list {
+		display: flex;
+	}
+
+	// .social-links__item
+
+	&__item:not(:last-child) {
+		margin-right: 10px;
+	}
+
+	// .social-links__icon
+
+	&__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 50px;
+		width: 50px;
+		border-radius: 50%;
+		color: $white;
+		transition: background .3s;
+
+		@media (max-width: 1400px) {
+			height: 35px;
+			width: 35px;
+		}
+
+		&[color="red"] {
+			background: $red;
+
+			&:hover {
+				background: #E14A13;
+			}
+		}
+		&[color="orange"] {
+			background: $orange;
+
+			&:hover {
+				background: #E79421;
+			}
+		}
+		&[color="blue"] {
+			background: $blue;
+
+			&:hover {
+				background: #1763D5;
+			}
+		}
+	}
+
+}
