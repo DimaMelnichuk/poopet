@@ -18,7 +18,8 @@
 @import "blocks/intro/intro";
 
 // Main-sections
-@import "blocks/welcome/welcome";
+@import "blocks/main/welcome";
+@import "blocks/main/services";
 /* ==========================================================================
   General Styles
 ========================================================================== */
@@ -42,4 +43,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.btn {
+	display: inline-block;
+	text-transform: uppercase;
+	font-family: $font-family-passion;
+	transition: all .3s;
 }
