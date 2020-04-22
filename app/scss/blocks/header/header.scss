@@ -82,4 +82,11 @@
 			height: 65px;
 		}
 	}
+
+	&__content-links {
+
+		@media (max-width: 1000px) {
+			margin-right: 50px;
+		}
+	}
 }

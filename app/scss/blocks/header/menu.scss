@@ -80,54 +80,52 @@
 			right: 20px;
 			cursor: pointer;
 			z-index: 1000;
+
+			&.active{
+				position: fixed;
+			}
+
+			&::after,
+			&::before {
+				content: "";
+				background-color: #3B3634;
+				position: absolute;
+				width: 100%;
+				height: 2px;
+				left: 0;
+				transition: all 0.3s ease 0s;
+			}
+
+			span {
+				position: absolute;
+				background-color: #3B3634;
+				width: 100%;
+				height: 2px;
+				left: 0;
+				top: 9px;
+				transition: all 0.3s ease 0s;
+			}
+			&::before {
+				top: 0;
+			}
+			&::after {
+				bottom: 0;
+			}
+			
+			&.active::before{
+				transform: rotate(45deg);
+				top: 9px;
+			}
+			&.active span {
+				transform: scale(0);
+			}
+			&.active::after{
+				transform: rotate(-45deg);
+				bottom: 9px;
+			}
 		}
 
 	}
 }
  
  
- @media screen and (max-width: 1000px) {
-	.menu__burger.active{
-		position: fixed;
-	}
-	.menu__burger:after,
-	.menu__burger:before {
-		content: "";
-		background-color: #3B3634;
-		position: absolute;
-		width: 100%;
-		height: 2px;
-		left: 0;
-		transition: all 0.3s ease 0s;
-	}
-	.menu__burger span {
-		position: absolute;
-		background-color: #3B3634;
-		width: 100%;
-		height: 2px;
-		left: 0;
-		top: 9px;
-		transition: all 0.3s ease 0s;
-	}
-	.menu__burger:before {
-		top: 0;
-	}
-	.menu__burger:after {
-		bottom: 0;
-	}
-	
-	.menu__burger.active:before{
-		transform: rotate(45deg);
-		top: 9px;
-	}
-	.menu__burger.active span{
-		transform: scale(0);
-	}
-	.menu__burger.active:after{
-		transform: rotate(-45deg);
-		bottom: 9px;
-	}
-	
-
- 
- }
