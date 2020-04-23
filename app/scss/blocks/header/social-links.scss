@@ -2,9 +2,6 @@
 
 .social-links {
 
-	@media (max-width: 430px) {
-		display: none;
-	}
 	// .social-links__list
 
 	&__list {
@@ -28,11 +25,6 @@
 		border-radius: 50%;
 		color: $white;
 		transition: background .3s;
-
-		@media (max-width: 1400px) {
-			height: 35px;
-			width: 35px;
-		}
 
 		&[color="red"] {
 			background: $red;

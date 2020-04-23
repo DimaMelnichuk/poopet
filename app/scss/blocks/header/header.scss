@@ -88,5 +88,17 @@
 		@media (max-width: 1000px) {
 			margin-right: 50px;
 		}
+
+		@media (max-width: 450px) {
+			display: none;
+		}
+
+		@media (max-width: 1400px) {
+			.header__content-icon {
+				width: 35px;
+				height: 35px;
+			}
+		}
 	}
+
 }

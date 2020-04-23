@@ -1,0 +1,95 @@
+.groomers {
+	padding: 120px 0;
+
+	@media (max-width: 450px) {
+		padding: 80px 0;
+	}
+	// .groomers__text
+
+	&__text {
+		position: relative;
+		margin-bottom: 80px;
+		z-index: 1;
+		text-align: center;
+
+		&::before {
+			content: "";
+			background: url(../img/icon-dog-orange.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			position: absolute;
+			opacity: .2;
+			z-index: -1;
+			top: -30px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 192px;
+			height: 168px;
+
+			@media (max-width: 1400px) {
+				width: 147px;
+				height: 126px;
+			}
+		}
+	}
+
+	// .groomers__inner
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin: -15px;
+
+		@media (max-width: 416px) {
+			justify-content: center;
+		}
+	}
+
+	// .groomers__item
+
+	&__item {
+		text-align: center;
+		padding: 15px;
+	}
+
+	// .groomers__item-img
+
+	&__item-img {
+		height: 215px;
+		width: 215px;
+		border-radius: 50%;
+		margin-bottom: 25px;
+
+		@media (max-width: 1400px) {
+			width: 170px;
+			height: 170px;
+		}
+	}
+
+	// .groomers__item-title
+
+	&__item-title {
+		font-family: $font-family-passion;
+		color: #3B3634;
+		font-size: 30px;
+		margin-bottom: 15px;
+	}
+
+	// .groomers__item-job
+
+	&__item-job {
+		color: #615E5D;
+		margin-bottom: 30px;
+	}
+
+	// .groomers__item-links
+
+	&__item-links {
+		.social-links__list {
+			justify-content: center;
+		}
+	}
+
+}
