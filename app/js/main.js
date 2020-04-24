@@ -12,4 +12,9 @@ $(function(){
 		cssEase: 'linear',
 	});
 
+	$('.testimonial__slider').slick({
+		arrows: false,
+		dots: true,
+	});
+
 });

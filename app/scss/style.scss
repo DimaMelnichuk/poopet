@@ -7,13 +7,14 @@
 @import "partials/fonts";
 
 // Blocks
+@import "blocks/bookmark";
+@import "blocks/title-icon";
 
 // Header
 @import "blocks/header/header";
 @import "blocks/header/header-top";
 @import "blocks/header/menu";
 @import "blocks/header/social-links";
-@import "blocks/title-icon";
 
 // Intro
 @import "blocks/intro/intro";
@@ -26,6 +27,7 @@
 @import "blocks/main/groomers";
 @import "blocks/main/about";
 @import "blocks/main/news";
+@import "blocks/main/testimonial";
 /* ==========================================================================
   General Styles
 ========================================================================== */
