@@ -1,7 +1,10 @@
 .testimonial {
 	position: relative;
-	background: #1D1B1A;
 	padding: 190px 0 145px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 
 	@media (max-width: 1400px) {
 		padding: 140px 0 75px;
@@ -9,6 +12,16 @@
 
 	@media (max-width: 500px) {
 		padding: 130px 0 50px;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background: rgba(29, 27, 26, 0.70);
 	}
 	// .testimonial__icon
 

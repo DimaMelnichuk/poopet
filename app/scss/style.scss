@@ -9,12 +9,19 @@
 // Blocks
 @import "blocks/bookmark";
 @import "blocks/title-icon";
+@import "blocks/btn";
+@import "pages/bread-crumb";
+@import "pages/page-header";
+@import "blocks/accordion";
 
 // Header
 @import "blocks/header/header";
 @import "blocks/header/header-top";
 @import "blocks/header/menu";
 @import "blocks/header/social-links";
+
+
+@import "blocks/support";
 
 // Intro
 @import "blocks/intro/intro";
@@ -29,6 +36,11 @@
 @import "blocks/main/news";
 @import "blocks/main/testimonial";
 @import "blocks/main/contact";
+
+// Pages
+@import "pages/about/page-contact";
+@import "pages/about/page-about";
+@import "pages/about/page-faq";
 
 // Footer
 @import "blocks/footer/footer";
@@ -55,11 +67,4 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-}
-
-.btn {
-	display: inline-block;
-	text-transform: uppercase;
-	font-family: $font-family-passion;
-	transition: all .3s;
 }

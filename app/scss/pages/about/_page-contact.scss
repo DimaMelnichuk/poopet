@@ -1,0 +1,35 @@
+.page-contact {
+	padding: 115px 0 320px ;
+	text-align: center;
+
+	&__text {
+		
+	}
+
+	// .page-contact__title
+
+	&__text-title {
+		max-width: 830px;
+		margin: 0 auto;
+		font-size: 60px;
+		color: #3B3634;
+		font-family: $font-family-passion;
+		margin-bottom: 25px;
+	}
+
+	// .page-contact__subtitle
+
+	&__text-subtitle {
+		color: $red;
+		font-size: 24px;
+		margin-bottom: 60px;
+	}
+
+	// .page-contact__btn
+
+	&__btn {
+		padding: 30px 70px;
+		border-radius: 40px;
+	}
+}
+

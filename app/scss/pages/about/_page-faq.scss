@@ -1,0 +1,45 @@
+.page-faq {
+	padding: 120px 0;
+	background: #F2F1F0;
+	// .page-faq__inner
+
+	&__inner {
+		display: flex;
+		margin: 0px -10px 0px -10px;
+		
+		@media (max-width: 900px) {
+			flex-direction: column;
+		}
+	}
+
+	// .page-faq__column
+
+	&__column {
+		flex: 0 1 50%;
+		padding: 0 10px 0 10px;
+	}
+
+	// .page-faq__subtitle
+
+	&__subtitle {
+	}
+
+	// .page-faq__title
+
+	&__title {
+		margin: 0px 0px 60px 0px;
+		
+	}
+
+	// .page-faq__img
+
+	&__img {
+		max-width: 100%;
+		width: 100%;
+
+		@media (max-width: 900px) {
+			margin: 0px 0px 30px 0px;
+			
+		}
+	}
+}

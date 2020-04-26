@@ -1,0 +1,28 @@
+.btn {
+	display: inline-block;
+	text-transform: uppercase;
+	font-family: $font-family-passion;
+	transition: all .3s;
+
+	&-primary {
+		background: $red;
+		color: $white;
+		font-size: 18px;
+
+		&:hover {
+			background: $green;
+		}
+	}
+
+	&-secondary {
+		background: #F2F1F0;
+		color: $red;
+		font-size: 20px;
+
+		&:hover {
+			background: $red;
+			color: $white;
+		}
+	}
+
+}

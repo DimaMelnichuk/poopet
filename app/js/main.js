@@ -1,4 +1,5 @@
 $(function(){
+
    /***************** Menu-btn ********************/
    $(".menu__burger").click(function(event){
 		$(".menu__burger,.menu").toggleClass("active");
@@ -16,5 +17,18 @@ $(function(){
 		arrows: false,
 		dots: true,
 	});
+
+	$('.gallery__slider').slick({
+		arrows: false,
+		dots: false,
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		cssEase: 'ease-out',
+	});
+
+
+
 
 });

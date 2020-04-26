@@ -1,6 +1,16 @@
 .footer {
+	position: relative;
 	color: #615e5d;
 	// .footer__top
+
+	&__bg {
+		position: absolute;
+		top: -218px;
+		height: 323px;
+		width: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
 
 	&__top {
 		padding: 100px 0 60px;

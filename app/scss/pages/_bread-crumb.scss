@@ -1,0 +1,53 @@
+.bread-crumb {
+	position: relative;
+
+	// .bread-crumb__list
+
+	&__list {
+		position: absolute;
+		bottom: -35px;
+		padding: 0px 60px;
+		right: 10%;
+		padding: 27px 30px 27px 40px;
+		max-width: 270px;
+		width: 100%;
+		background: $red;
+		border-radius: 37px 0 0 37px;
+
+	}
+
+	// .bread-crumb__item
+
+	&__item {
+		position: relative;
+		display: inline-block;
+		margin-right: 8px;
+    	padding-right: 16px;
+		color: $white;
+		font-size: 14px;
+		font-weight: $bold;
+
+		&:before {
+			position: absolute;
+			content: '';
+			background: #ffffff;
+			width: 4px;
+			height: 2px;
+			top: 50%;
+			right: 0px;
+			transform: translateY(-50%);
+	  }
+
+	}
+
+
+	// .bread-crumb__link
+
+	&__link {
+		color: $white;
+
+		&:hover {
+			color: $blue;
+		}
+	}
+}
