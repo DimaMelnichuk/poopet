@@ -38,14 +38,19 @@
 		&:hover {
 			opacity: 1;
 
-			.gallery__icon {
+			.gallery__link {
 				transform: scale(1);
 			}
 		}
 	}
 
-	&__icon {
+	&__link {
 		transform: scale(0);
 		transition: transform .3s;
+	}
+
+	&__icon {
+		font-size: 40px;
+		color: $white;
 	}
 }
