@@ -1,0 +1,14 @@
+.page-news {
+	padding: 150px 0px 320px;
+	// .page-news__inner
+
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -15px;
+
+		&>div {
+			padding: 15px;
+		}
+	}
+}
