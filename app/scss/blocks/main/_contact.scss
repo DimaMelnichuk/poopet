@@ -8,21 +8,6 @@
 	@media (max-width: 600px) {
 		padding: 100px 0;
 	}
-	// .contact__text
-
-	&__text {
-		text-align: center;
-	}
-
-	// .contact__subitle
-
-	&__subitle {
-	}
-
-	// .contact__title
-
-	&__title {
-	}
 
 	// .contact__form
 
@@ -81,23 +66,14 @@
 
 		button {
 			margin: 0 auto;
-			background: $red;
 			padding: 30px 70px;
-			border: 1px solid $red;
 			border-radius: 40px;
-			color: $white;
-			font-size: 20px;
-			font-family: $font-family-passion;
 
 			@media (max-width: 1400px) {
 				padding: 20px 60px;
 				font-size: 15px;
 			}
 
-			&:hover {
-				background: $white;
-				color: $red;
-			}
 		}
 	}
 

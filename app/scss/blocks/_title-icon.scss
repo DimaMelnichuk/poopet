@@ -5,23 +5,18 @@
 	text-align: center;
 
 	&::before {
-		content: "";
-		background: url(../img/icon-dog-orange.png);
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
+		content: "\f105";
+		font-family: "Flaticon";
+		font-size: 190px;
+		color: #F3E8E3;
 		position: absolute;
-		opacity: .2;
-		z-index: -1;
+		line-height: 150px;
 		top: -30px;
 		left: 50%;
 		transform: translateX(-50%);
-		width: 192px;
-		height: 168px;
+	}
 
-		@media (max-width: 1400px) {
-			width: 147px;
-			height: 126px;
-		}
+	&--light::before {
+		color: #413C3A;
 	}
 }

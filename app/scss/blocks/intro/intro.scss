@@ -97,10 +97,8 @@
 	}
 
 	&__slider-content {
-		position: relative;
 		padding: 195px 15px;
-		color: $white;
-		text-align: center;
+
 
 		@media (max-width: 450px) {
 			padding: 100px 15px;
@@ -110,10 +108,14 @@
 	// .intro__slider-subtitle
 
 	&__slider-subtitle {
+		color: $white;
 		font-size: 36px;
-		font-family: $font-family-schoolbell;
-		text-decoration: underline;
+		line-height: 40px;
 		margin-bottom: 35px;
+
+		&::before {
+			background: $white;
+		}
 
 		@media (max-width: 900px) {
 			font-size: 30px;
@@ -126,11 +128,10 @@
 	// .intro__slider-title
 
 	&__slider-title {
-		font-family: $font-family-passion;
 		font-weight: $bold;
+		color: $white;
 		font-size: 120px;
 		line-height: 90px;
-		text-transform: uppercase;
 		margin-bottom: 20px;
 
 		@media (max-width: 1400px) {
@@ -157,16 +158,10 @@
 
 	// .intro__slider-link
 
-	&__slider-link {
-		display: inline-block;
-		text-transform: uppercase;
-		color: $white;
-		background: $red;
+	&__slider-btn {
 		font-size: 22px;
-		font-family: $font-family-passion;
 		padding: 35px 70px;
 		border-radius: 45px;
-		transition: background .3s;
 
 		@media (max-width: 1400px) {
 			padding: 20px 50px;
@@ -175,10 +170,6 @@
 		@media (max-width: 450px) {
 			padding: 15px 45px;
 			font-size: 20px;
-		}
-
-		&:hover {
-			background: #E14A13;
 		}
 	}
 }

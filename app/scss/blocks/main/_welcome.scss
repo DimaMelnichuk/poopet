@@ -67,14 +67,15 @@
 		margin: 0 auto 20px;
 		height: 90px;
 		width: 90px;
-		background: $orange;
+		background: $red;
 		border-radius: 50%;
 	}
 
 	// .welcome__circle-icon
 
 	&__circle-icon {
-		
+		font-size: 40px;
+		color: $white;
 	}
 
 	// .welcome__call
@@ -86,7 +87,7 @@
 	// .welcome__number
 
 	&__number {
-		color: $orange;
+		color: $red;
 		font-size: 40px;
 		font-family: $font-family-passion;
 		transition: color .3s;
@@ -96,7 +97,7 @@
 		}
 
 		&:hover {
-			color: $red;
+			color: $green;
 		}
 	}
 
@@ -107,26 +108,5 @@
 		height: 100%;
 		object-position: center;
 		object-fit: cover;
-	}
-}
-
-
-.subtitle {
-	font-family: $font-family-schoolbell;
-	font-size: 20px;
-	text-decoration: underline;
-	color: $blue;
-	margin-bottom: 25px;
-
-	@media (max-width: 1400px) {
-		margin-bottom: 15px;
-	}
-}
-.title {
-	font-size: 60px;
-	font-family: $font-family-passion;
-
-	@media (max-width: 1400px) {
-		font-size: 40px;
 	}
 }

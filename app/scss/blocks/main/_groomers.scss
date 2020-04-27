@@ -4,35 +4,6 @@
 	@media (max-width: 450px) {
 		padding: 80px 0;
 	}
-	// .groomers__text
-
-	&__text {
-		position: relative;
-		margin-bottom: 80px;
-		z-index: 1;
-		text-align: center;
-
-		&::before {
-			content: "";
-			background: url(../img/icon-dog-orange.png);
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: center;
-			position: absolute;
-			opacity: .2;
-			z-index: -1;
-			top: -30px;
-			left: 50%;
-			transform: translateX(-50%);
-			width: 192px;
-			height: 168px;
-
-			@media (max-width: 1400px) {
-				width: 147px;
-				height: 126px;
-			}
-		}
-	}
 
 	// .groomers__inner
 

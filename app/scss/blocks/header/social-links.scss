@@ -28,24 +28,18 @@
 
 		&[color="red"] {
 			background: $red;
-
-			&:hover {
-				background: #E14A13;
-			}
 		}
+		
 		&[color="orange"] {
 			background: $orange;
-
-			&:hover {
-				background: #E79421;
-			}
 		}
+
 		&[color="blue"] {
 			background: $blue;
+		}
 
-			&:hover {
-				background: #1763D5;
-			}
+		&:hover {
+			background: #3b3634;
 		}
 	}
 

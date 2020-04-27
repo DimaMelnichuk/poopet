@@ -1,0 +1,39 @@
+.text {
+	text-align: center;
+
+	&__title {
+		position: relative;
+		font-size: 60px;
+		color: #3B3634;
+		font-family: $font-family-passion;
+	
+		@media (max-width: 1400px) {
+			font-size: 40px;
+		}
+	}
+
+	&__subtitle {
+		position: relative;
+		display: inline-block;
+		font-family: $font-family-schoolbell;
+		font-size: 20px;
+		line-height: 30px;
+		color: $blue;
+		margin-bottom: 25px;
+	
+		&::before {
+			position: absolute;
+			content: '';
+			background: $blue;
+			width: 100%;
+			height: 1px;
+			left: 0px;
+			bottom: 4px;
+		}
+	
+		@media (max-width: 1400px) {
+			margin-bottom: 15px;
+		}
+	}
+
+}

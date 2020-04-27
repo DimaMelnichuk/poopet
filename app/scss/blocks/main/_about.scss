@@ -42,8 +42,17 @@
 		}
 	}
 
+	&__subtitle {
+		color: $white;
+
+		&::before {
+			background: $white;
+		}
+	}
+
 	&__title {
 		margin-bottom: 40px;
+		color: $white;
 
 		@media (max-width: 1000px) {
 			margin-bottom: 30px;

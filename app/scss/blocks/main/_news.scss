@@ -4,11 +4,6 @@
 	@media (max-width: 450px) {
 		padding: 80px 0 60px 0;
 	}
-	// .news__text
-
-	&__text {
-		text-align: center;
-	}
 
 	// .news__inner
 
@@ -189,15 +184,8 @@
 	// .news__item-btn
 
 	&__item-btn {
-		background: #F2F1F0;
-		color: $red;
 		padding: 20px 40px;
 		border-radius: 30px;
 		align-self: flex-start;
-
-		&:hover {
-			background: $red;
-			color: $white;
-		}
 	}
 }
