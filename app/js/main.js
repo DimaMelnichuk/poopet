@@ -27,8 +27,4 @@ $(function(){
 		autoplaySpeed: 2000,
 		cssEase: 'ease-out',
 	});
-
-
-
-
 });
