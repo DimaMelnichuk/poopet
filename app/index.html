@@ -98,50 +98,51 @@
 	</header>
 	<!-- header end -->
 
-	<!-- intro -->
-	<section class="intro">
-
-		<div class="intro__slider">
-
-			<!-- intro__slider-item -->
-			<div class="intro__slider-item">
-
-				<img class="intro__slider-img" src="img/intro/slider-1.jpg" alt="">
-				<div class="intro__slider-content text">
-					<div class="intro__slider-subtitle text__subtitle">Trusted Pet Grooming & Care Center</div>
-					<div class="intro__slider-title text__title">
-						We take Care
-						<span>your pets</span>
-					</div>
-					<a href="#" class="intro__slider-btn btn btn-primary">view projects</a>
-				</div>
-
-			</div>
-			<!-- intro__slider-item -->
-			<!-- intro__slider-item -->
-			<div class="intro__slider-item">
-
-				<img class="intro__slider-img" src="img/intro/slider-2.jpg" alt="">
-				<div class="intro__slider-content text">
-					<div class="intro__slider-subtitle text__subtitle">Trusted Pet Grooming & Care Center</div>
-					<div class="intro__slider-title text__title">
-						We take Care
-						<span>your pets</span>
-					</div>
-					<a href="#" class="intro__slider-btn btn btn-primary">view projects</a>
-				</div>
-
-			</div>
-			<!-- intro__slider-item -->
-
-
-		</div>
-
-
-	</section>
-	<!-- intro end -->
-
+	<!-- main -->
 	<main class="main">
+
+		<!-- intro -->
+		<section class="intro">
+
+			<div class="intro__slider">
+
+				<!-- intro__slider-item -->
+				<div class="intro__slider-item">
+
+					<img class="intro__slider-img" src="img/intro/slider-1.jpg" alt="">
+					<div class="intro__slider-content text">
+						<div class="intro__slider-subtitle text__subtitle">Trusted Pet Grooming & Care Center</div>
+						<div class="intro__slider-title text__title">
+							We take Care
+							<span>your pets</span>
+						</div>
+						<a href="#" class="intro__slider-btn btn btn-primary">view projects</a>
+					</div>
+
+				</div>
+				<!-- intro__slider-item -->
+				<!-- intro__slider-item -->
+				<div class="intro__slider-item">
+
+					<img class="intro__slider-img" src="img/intro/slider-2.jpg" alt="">
+					<div class="intro__slider-content text">
+						<div class="intro__slider-subtitle text__subtitle">Trusted Pet Grooming & Care Center</div>
+						<div class="intro__slider-title text__title">
+							We take Care
+							<span>your pets</span>
+						</div>
+						<a href="#" class="intro__slider-btn btn btn-primary">view projects</a>
+					</div>
+
+				</div>
+				<!-- intro__slider-item -->
+
+
+			</div>
+
+
+		</section>
+		<!-- intro end -->
 
 		<!-- welcome -->
 		<section class="welcome">
@@ -175,6 +176,7 @@
 					<div class="text__title">What We Do</div>
 				</div>
 				<div class="services__inner">
+
 					<!-- services__item -->
 					<div class="services__item">
 						<div class="services__item-box">
@@ -198,7 +200,7 @@
 							<span>Checkups</span>
 						</div>
 						<div class="services__item-descr">here are many variations of passages of ipsum available but the majority red.</div>
-						<a class="services__item-btn btn btn-secondary" href="#">read more</a>
+						<a class="services__item-btn btn btn-secondary" href="services-detail.html">read more</a>
 					</div>
 					<!-- services__item end -->
 
@@ -211,12 +213,15 @@
 							<span>Pets</span>
 						</div>
 						<div class="services__item-descr">here are many variations of passages of ipsum available but the majority red.</div>
-						<a class="services__item-btn btn btn-secondary" href="#">read more</a>
+						<a class="services__item-btn btn btn-secondary" href="services-detail.html">read more</a>
 					</div>
 					<!-- services__item end -->
 				</div>
 
-				<a class="services__btn btn btn-primary" href="#">View All Services</a>
+				<div class="services__box-btn">
+					<a class="services__btn btn btn-primary" href="#">View All Services</a>
+				</div>
+
 			</div>
 		</section>
 		<!-- services end -->
@@ -491,7 +496,9 @@
 					<!-- news__item -->
 					<div class="news__item">
 						<div class="news__item-box">
-							<img class="news__item-img" src="img/news/news-1.png" alt="">
+							<a class="news__item-box-link" href="news-detail.html">
+								<img class="news__item-img" src="img/news/news-1.png" alt="">
+							</a>
 							<div class="news__item-date bookmark">
 								23
 								<span>APR</span> 
@@ -502,8 +509,8 @@
 								<div class="news__item-person">Mike Hardson</div>
 								<div class="news__item-comment">3 Comments</div>
 							</div>
-							<div class="news__item-title">How to take care of any kind of your pets</div>
-							<div class="news__item-descr">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.There are many variations of passages of Lorem Ipsum available, but the majority have suf</div>
+							<a class="news__item-title" href="news-detail.html">How to take care of any kind of your pets</a>
+							<div class="news__item-descr">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</div>
 						</div>
 						<a class="news__item-btn btn btn-secondary" href="news-detail.html">read more</a>
 					</div>
@@ -512,7 +519,9 @@
 					<!-- news__item -->
 					<div class="news__item">
 						<div class="news__item-box">
-							<img class="news__item-img" src="img/news/news-2.png" alt="">
+							<a class="news__item-box-link" href="news-detail.html">
+								<img class="news__item-img" src="img/news/news-2.png" alt="">
+							</a>
 							<div class="news__item-date bookmark">
 								20
 								<span>Apr</span> 
@@ -533,7 +542,9 @@
 					<!-- news__item -->
 					<div class="news__item">
 						<div class="news__item-box">
-							<img class="news__item-img" src="img/news/news-3.png" alt="">
+							<a class="news__item-box-link" href="news-detail.html">
+								<img class="news__item-img" src="img/news/news-3.png" alt="">
+							</a>
 							<div class="news__item-date bookmark">
 								17 
 								<span>APr</span> 
@@ -606,6 +617,7 @@
 		<!-- contact end -->
 
 	</main>
+	<!-- main end -->
 
 	<!-- footer -->
 	<footer class="footer">

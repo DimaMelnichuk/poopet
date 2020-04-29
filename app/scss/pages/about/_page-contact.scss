@@ -2,8 +2,12 @@
 	padding: 115px 0 320px ;
 	text-align: center;
 
-	&__text {
-		
+	@media (max-width: 1000px) {
+		padding: 115px 0;
+	}
+
+	@media (max-width: 480px) {
+		padding: 70px 0px;
 	}
 
 	// .page-contact__title
@@ -15,6 +19,10 @@
 		color: #3B3634;
 		font-family: $font-family-passion;
 		margin-bottom: 25px;
+
+		@media (max-width: 480px) {
+			font-size: 40px;
+		}
 	}
 
 	// .page-contact__subtitle
@@ -23,6 +31,11 @@
 		color: $red;
 		font-size: 24px;
 		margin-bottom: 60px;
+
+		@media (max-width: 480px) {
+			font-size: 20px;
+    		margin-bottom: 40px;
+		}
 	}
 
 	// .page-contact__btn
@@ -30,6 +43,10 @@
 	&__btn {
 		padding: 30px 70px;
 		border-radius: 40px;
+
+		@media (max-width: 480px) {
+			padding: 20px 40px;
+		}
 	}
 }
 

@@ -1,4 +1,8 @@
 .page-services {
 	background: #F2F1F0;
 	padding: 150px 0 120px;
+
+	@media (max-width: 480px) {
+		padding: 70px 0;
+	}
 }

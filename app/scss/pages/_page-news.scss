@@ -1,5 +1,13 @@
 .page-news {
 	padding: 150px 0px 320px;
+
+	@media (max-width: 1000px) {
+		padding: 150px 0px;
+	}
+
+	@media (max-width: 480px) {
+		padding: 70px 0;
+	}
 	// .page-news__inner
 
 	&__inner {

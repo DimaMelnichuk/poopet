@@ -1,5 +1,3 @@
-@import "../../partials/vars";
-
 .header {
 	position: relative;
 
@@ -48,10 +46,6 @@
 			@media (max-width: 1300px) {
 				left: -26%;
 				width: 60px;
-			}
-
-			@media (max-width: 1000px) {
-				height: 65px;
 			}
 
 			@media (max-width: 1000px) {

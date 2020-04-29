@@ -1,22 +1,38 @@
 .page-about {
 	padding: 150px 0px 0px 0px;
+
+	@media (max-width: 480px) {
+		padding: 70px 0px 0px 0px;
+	}
 	// .page-about__box
 
 	&__box {
 		position: relative;
 		margin-bottom: 100px;
+
+		@media (max-width: 480px) {
+			margin-bottom: 70px;
+		}
 	}
 	// .page-about__box-icon
 
 	&__box-icon {
 		font-size: 40px;
 		line-height: 130px;
+
+		@media (max-width: 480px) {
+			font-size: 30px;
+    		line-height: 60px;
+		}
 	}
 
 	// .page-about__box-img
 
 	&__box-img {
 		max-width: 100%;
+		min-height: 200px;
+		object-position: center;
+		object-fit: cover;
 	}
 
 	&__box-bookmark {
@@ -26,6 +42,12 @@
 		left: 60px;
 		border-radius: 0 0 65px 65px;
 		transition: background .3s;
+
+		@media (max-width: 480px) {
+			height: 60px;
+    		width: 60px;
+    		left: 15px;
+		}
 
 		&:hover {
 			background: $green;
@@ -38,6 +60,15 @@
 		margin-bottom: 65px;
 	}
 
+	// .page-about__text-subtitle
+
+	&__text-subtitle {
+
+		@media (max-width: 480px) {
+			font-size: 17px;
+		}
+	}
+
 	// .page-about__text-descr
 
 	&__text-descr {
@@ -46,5 +77,10 @@
 		font-size: 18px;
 		line-height: 36px;
 		color: #615e5d;
+
+		@media (max-width: 480px) {
+			font-size: 16px;
+    		line-height: 27px;
+		}
 	}
 }

@@ -14,20 +14,19 @@
 @import "pages/page-header";
 @import "blocks/accordion";
 @import "blocks/main/text";
+@import "blocks/social-links";
 
 // Header
 @import "blocks/header/header";
 @import "blocks/header/header-top";
 @import "blocks/header/menu";
-@import "blocks/header/social-links";
+
 
 
 @import "blocks/support";
 
-// Intro
-@import "blocks/intro/intro";
-
 // Main-sections
+@import "blocks/main/intro";
 @import "blocks/main/welcome";
 @import "blocks/main/services";
 @import "blocks/main/takecare";
