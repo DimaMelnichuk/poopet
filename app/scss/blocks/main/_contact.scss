@@ -6,11 +6,11 @@
 	}
 
 	@media (max-width: 1000px) {
-		padding: 130px 0;
+		padding: 90px 0;
 	}
 
-	@media (max-width: 600px) {
-		padding: 100px 0;
+	@media (max-width: 480px) {
+		padding: 70px 0;
 	}
 
 	// .contact__form
@@ -26,7 +26,7 @@
 			max-width: 750px;
 		}
 
-		@media (max-width: 540px) {
+		@media (max-width: 545px) {
 			flex-direction: column;
 		}
 
@@ -35,6 +35,7 @@
 			margin-bottom: 10px;
 			background: #F2F1F0;
 			height: 75px;
+			border: 3px solid #F2F1F0;
 			transition: all .3s;
 
 			&:focus {
@@ -52,7 +53,6 @@
 			}
 
 			@media (max-width: 600px) {
-				flex: 0 1 46%;
 				padding: 15px 25px;
 			}
 		}
@@ -87,30 +87,4 @@
 		}
 	}
 
-
-	// .contact__form-text
-
-	&__form-text {
-	}
-
-	// .contact__form-email
-
-	&__form-email {
-	}
-
-	// .contact__form-number
-
-	&__form-number {
-	}
-
-	// .contact__input-message
-
-	&__input-message {
-	}
-
-	// .contact__form-btn
-
-	&__form-btn {
-
-	}
 }

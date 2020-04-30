@@ -2,8 +2,12 @@
 	padding: 150px 0 110px;
 	background: #3B3634;
 
-	@media (max-width: 450px) {
-		padding: 80px 0;
+	@media (max-width: 770px) {
+		padding: 90px 0px;
+	}
+
+	@media (max-width: 480px) {
+		padding: 70px 0;
 	}
 
 	&__subtitle {
@@ -23,25 +27,30 @@
 	&__inner {
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
 
-		@media (max-width: 600px) {
-			flex-direction: column;
+		@media (max-width: 1000px) {
+			margin: -15px;
+			justify-content: center;
 		}
+
 	}
 
 	// .takecare__item
 
 	&__item {
+		overflow: hidden;
 		flex: 0 1 15%;
 		text-align: center;
 		color: $white;
 
-		@media (max-width: 900px) {
-			flex: 0 1 18%;
+		@media (max-width: 1000px) {
+			flex: 0 1 25%;
+			padding: 15px;
 		}
 
-		@media (max-width: 600px) {
-			margin-bottom: 30px;
+		@media (max-width: 480px) {
+			flex-basis: 100%;
 		}
 
 		&:hover .takecare__item-box::before{
@@ -83,12 +92,6 @@
 			z-index: -1;
 		}
 
-		@media (max-width: 900px) {
-			height: 100px;
-			width: 100px;
-			margin-bottom: 15px;
-		}
-
 	}
 
 	// .takecare__item-icon
@@ -119,11 +122,11 @@
 		line-height: 30px;
 		font-weight: 600;
 
-		@media (max-width: 900px) {
+		@media (max-width: 1000px) {
 			line-height: 22px;
 		}
 
-		@media (max-width: 600px) {
+		@media (max-width: 480px) {
 			max-width: 190px;
 			margin: 0 auto;
 		}

@@ -1,21 +1,21 @@
 .groomers {
 	padding: 120px 0;
 
-	@media (max-width: 450px) {
-		padding: 80px 0;
+	@media (max-width: 770px) {
+		padding: 90px 0px;
+	}
+
+	@media (max-width: 480px) {
+		padding: 70px 0;
 	}
 
 	// .groomers__inner
 
 	&__inner {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		flex-wrap: wrap;
 		margin: -15px;
-
-		@media (max-width: 416px) {
-			justify-content: center;
-		}
 	}
 
 	// .groomers__item
@@ -23,6 +23,15 @@
 	&__item {
 		text-align: center;
 		padding: 15px;
+		flex: 0 1 25%;
+
+		@media (max-width: 1000px) {
+			flex-basis: 33.333%;
+		}
+
+		@media (max-width: 480px) {
+			flex-basis: 100%;
+		}
 	}
 
 	// .groomers__item-img
@@ -30,6 +39,8 @@
 	&__item-img {
 		height: 215px;
 		width: 215px;
+		object-position: center;
+		object-fit: cover;
 		border-radius: 50%;
 		margin-bottom: 25px;
 
