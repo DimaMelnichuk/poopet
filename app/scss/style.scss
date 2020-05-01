@@ -46,7 +46,15 @@
 @import "pages/page-map";
 @import "pages/page-news";
 @import "pages/services-detail/services-detail";
-@import "pages/news-detail";
+@import "pages/services-detail/appointment-sidebar";
+@import "pages/services-detail/services-sidebar";
+@import "pages/news-detail/news-detail";
+@import "pages/news-detail/content/author-content";
+@import "pages/news-detail/content/comment-content";
+@import "pages/news-detail/content/leave-content";
+@import "pages/news-detail/sidebar/news-sidebar";
+@import "pages/news-detail/sidebar/post-sidebar";
+@import "pages/news-detail/sidebar/tags-sidebar";
 @import "pages/sponsor";
 
 // Footer

@@ -1,0 +1,33 @@
+.news-sidebar {
+
+	// .news-sidebar__post
+
+	&__post {
+		
+		&:not(:last-child) {
+			margin: 0px 0px 25px 0px;
+		}
+	}
+
+	// .news-sidebar__post-date
+
+	&__post-date {
+		font-size: 14px;
+		color: $blue;
+		font-weight: $bold;
+		margin: 0px 0px 15px 0px;
+	}
+
+	// .news-sidebar__post-link
+
+	&__post-link {
+		display: inline-block;
+		color: #3b3634;
+		line-height: 30px;
+		transition: color .3s;
+
+		&:hover {
+			color: $red;
+		}
+	}
+}

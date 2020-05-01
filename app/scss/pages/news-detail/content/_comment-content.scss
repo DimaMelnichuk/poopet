@@ -1,0 +1,121 @@
+.comment-content {
+
+	// .comment-content__title
+
+	&__title {
+		font-family: $font-family-passion;
+		color: #3b3634;
+		font-size: 40px;
+		margin: 0px 0px 55px 0px;
+	}
+
+	// .comment-content__item
+
+	&__item {
+		display: flex;
+		border-bottom: 2px solid #F2F1F0;
+		margin: 0px 0px 55px 0px;
+		padding: 0px 0px 55px 0px;
+
+		@media (max-width: 780px) {
+			margin: 0px 0px 40px 0px;
+    		padding: 0px 0px 40px 0px;
+		}
+
+		@media (max-width: 480px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	// .comment-content__item-box
+
+	&__item-box {
+		position: relative;
+		margin: 0px 40px 0px 0px;
+		width: 130px;
+		height: 137px;
+
+		@media (max-width: 600px) {
+			width: 100px;
+			height: 100px;
+			margin: 0px 25px 0px 0px;
+		}	
+		
+		@media (max-width: 480px) {
+			width: 127px;
+			height: 134px;
+			margin: 0px 0px 15px 0px;
+		}
+	}
+
+	&__item-img {
+		height: 100%;
+		border-radius: 10px;
+	}
+
+	// .comment-content__item-date
+
+	&__item-date {
+		top: 0;
+		left: 10px;
+		height: 50px;
+		width: 45px;
+		border-radius: 0 0 24px 24px;
+		padding: 5px 0px 0px 0px;
+		
+
+		span {
+			display: block;
+		}
+	}
+
+	&__item-text {
+
+		@media (max-width: 480px) {
+			text-align: center;
+			margin: 0px 0px 15px 0px;
+		}
+	}
+
+	// .comment-content__item-title
+
+	&__item-title {
+		font-size: 24px;
+		font-family: $font-family-passion;
+		color: #3b3634;
+		margin: 0px 0px 40px 0px;
+
+		@media (max-width: 780px) {
+			margin: 0px 0px 20px 0px;
+		}
+	}
+
+	// .comment-content__item-descr
+
+	&__item-descr {
+		line-height: 30px;
+		color: #615e5d;
+
+		@media (max-width: 780px) {
+			line-height: 22px;
+		}
+	}
+
+	// .comment-content__item-btn
+
+	&__item-btn {
+		padding: 20px 30px;
+		border-radius: 30px;
+		align-self: flex-start;
+
+		@media (max-width: 780px) {
+			padding: 15px 25px;
+			font-size: 18px;
+		}
+
+		@media (max-width: 480px) {
+			align-self: center;
+		}
+	}
+}

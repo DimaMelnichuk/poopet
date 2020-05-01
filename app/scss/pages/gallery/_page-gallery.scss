@@ -5,6 +5,10 @@
 		padding: 150px 0px;
 	}
 
+	@media (max-width: 780px) {
+		padding: 90px 0px;
+	}
+
 	@media (max-width: 480px) {
 		padding: 70px 0;
 	}
@@ -18,7 +22,7 @@
 		}
 	}
 
-	&__box {
+	&__item {
 		flex: 0 1 33.333%;
 		padding: 10px;
 

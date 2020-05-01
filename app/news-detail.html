@@ -116,6 +116,7 @@
 
 		<!-- news-detail -->
 		<section class="news-detail">
+			<!-- container -->
 			<div class="container">
 
 				<!-- news-detail__inner -->
@@ -123,6 +124,7 @@
 
 					<!-- services-detail__content -->
 					<div class="news-detail__content">
+						<!-- news-detail__content-box -->
 						<div class="news-detail__content-box">
 							<img class="news-detail__content-img" src="img/service-news/blog-single-1.jpg" alt="">
 							<div class="news-detail__content-date bookmark">
@@ -130,10 +132,14 @@
 								<span>APR</span>
 							</div>
 						</div>
+						<!-- news-detail__content-box end -->
+
+						<!-- news__item-feedback -->
 						<div class="news__item-feedback">
 							<div class="news__item-person">Mike Hardson</div>
 							<div class="news__item-comment">3 Comments</div>
 						</div>
+						<!-- news__item-feedback end -->
 						<div class="news-detail__content-title">Shelter and feed animals that are in need</div>
 						<div class="news-detail__content-text">There are many variations of passages of lorem ipsum available,
 							but the majority have suffered alteration in some form. Lorem ipsum dolor sit amet, consectetur
@@ -155,8 +161,8 @@
 							porttitor consequat. Ut porttitor non ante at bibendum. Praesent posuere turpis lacus, vel tempor
 							felis eleifend eu. Morbi velit odio, pulvinar vel ligula donec, consectetur faucibus elit.</div>
 
-
-						<div class="news-detail__content-inner">
+						<!-- news-detail__content-share -->
+						<div class="news-detail__content-share">
 
 							<!-- tags-sidebar -->
 							<div class="news-detail__content-tags tags-sidebar">
@@ -186,6 +192,7 @@
 							</div>
 							<!-- social-links end -->
 						</div>
+						<!-- news-detail__content-share end -->
 
 						<!-- author-content -->
 						<div class="news-detail__content-author author-content">
@@ -197,10 +204,13 @@
 						</div>
 						<!-- author-content end -->
 
+						<!-- comment-content -->
 						<div class="news-detail__content-comment comment-content">
 							<div class="comment-content__title">3 comments</div>
-
+							
+								<!-- comment-content__item -->
 								<div class="comment-content__item">
+									<!-- comment-content__item-box -->
 									<div class="comment-content__item-box">
 										<img class="comment-content__item-img" src="img/service-news/comment/comment-1.png" alt="">
 										<div class="comment-content__item-date bookmark">
@@ -208,13 +218,18 @@
 											<span>APR</span> 
 										</div>
 									</div>
+									<!-- comment-content__item-box end -->
+									<!-- comment-content__item-text -->
 									<div class="comment-content__item-text">
 										<div class="comment-content__item-title">Kevin Martin</div>
 										<div class="comment-content__item-descr">Lorem ipsum is simply free text used by copytyping refreshing. Neque porro est dolorem ipsum quia quaed inventore veritatis et quasi architecto beatae vitae dicta.</div>
 									</div>
+									<!-- comment-content__item-text end -->
 									<a class="comment-content__item-btn btn btn-secondary" href="#">reply</a>
 								</div>
+								<!-- comment-content__item end -->
 
+								<!-- comment-content__item -->
 								<div class="comment-content__item">
 									<div class="comment-content__item-box">
 										<img class="comment-content__item-img" src="img/service-news/comment/comment-2.png" alt="">
@@ -229,7 +244,9 @@
 									</div>
 									<a class="comment-content__item-btn btn btn-secondary" href="#">reply</a>
 								</div>
+								<!-- comment-content__item end -->
 								
+								<!-- comment-content__item -->
 								<div class="comment-content__item">
 									<div class="comment-content__item-box">
 										<img class="comment-content__item-img" src="img/service-news/comment/comment-2.png" alt="">
@@ -244,13 +261,15 @@
 									</div>
 									<a class="comment-content__item-btn btn btn-secondary" href="#">reply</a>
 								</div>
+								<!-- comment-content__item end -->
 
 						</div>
+						<!-- comment-content end -->
 
 						<!-- leave-content -->
 						<div class="news-detail__content-leave leave-content">
 							<div class="leave-content__title text__title">Leave a Comment</div>
-							<form class="contact__form" action="#">
+							<form class="contact__form news-detail__content-form" action="#">
 								<input class="contact__form-text" type="text" placeholder="Full name" required>
 								<input class="contact__form-email" type="email" placeholder="Email address" required>
 								<textarea class="contact__input-message" name="#" placeholder="Write here message" required></textarea>
@@ -319,9 +338,8 @@
 						<!-- post-sidebar -->
 						<div class="news-detail__sidebar-post post-sidebar">
 							<div class="post-sidebar__title sidebar__title">Featured post</div>
-							<div class="post-sidebar__box">
-								<img class="post-sidebar__box-img" src="img/service-news/featured-bg.jpg" alt="">
-								<span class="post-sidebar__box-text">Don’t Worry your Pets are in Good Hands</span>
+							<div class="post-sidebar__box" style="background-image: url(img/service-news/featured-bg.jpg);">
+								<div class="post-sidebar__box-text">Don’t Worry your Pets are in Good Hands</div>
 							</div>
 						</div>
 						<!-- post-sidebar end -->
@@ -346,6 +364,7 @@
 				<!-- news-detail__inner end-->
 
 			</div>
+			<!-- container end -->
 		</section>
 		<!-- news-detail end -->
 
@@ -457,7 +476,6 @@
 	<script src="js/libs.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/accordion.js"></script>
-	<script src="https://kit.fontawesome.com/3e99ed63dd.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

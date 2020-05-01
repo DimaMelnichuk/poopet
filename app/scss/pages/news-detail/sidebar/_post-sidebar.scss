@@ -1,0 +1,39 @@
+.post-sidebar {
+
+	// .post-sidebar__box
+
+	&__box {
+		position: relative;
+		width: 100%;
+		border-radius: 10px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 89px 30px 85px 30px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background: rgba(59, 54, 52, 0.70);
+			border-radius: 10px;
+		}
+	}
+
+
+	// .post-sidebar__box-text
+
+	&__box-text {
+		position: relative;
+		top: 0;
+		left: 0;
+		color: $white;
+		font-size: 30px;
+		line-height: 35px;
+		font-family: $font-family-passion;
+		text-align: center;
+	}
+}

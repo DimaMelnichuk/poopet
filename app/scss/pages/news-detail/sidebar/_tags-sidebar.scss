@@ -1,0 +1,43 @@
+.tags-sidebar {
+
+	// .tags-sidebar__title
+
+	&__title {
+		display: inline-block;
+		align-self: center;
+		text-transform: capitalize;
+		font-size: 24px;
+		font-family: $font-family-passion;
+		margin: 0px 10px 10px 0px;
+	}
+
+	// .tags-sidebar__item
+
+	&__item {
+		display: inline-block;
+	}
+
+	// .tags-sidebar__link
+
+	&__link {
+		display: inline-block;
+		margin: 0px 10px 10px 0px;
+		font-family: $font-family-passion;
+		text-transform: uppercase;
+		color: $red;
+		background: $white;
+		padding: 15px 30px;
+		border-radius: 23px;
+		transition: background .3s, color .3s;
+		
+		&:hover {
+			color: $white;
+			background: $green;
+		}
+	}
+
+	&__link--secondary {
+		color: $red;
+		background: #F2F1F0;
+	}
+}
