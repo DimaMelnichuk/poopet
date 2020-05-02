@@ -1,5 +1,6 @@
 .page-gallery {
 	padding: 150px 0 330px;
+	overflow: hidden;
 
 	@media (max-width: 1000px) {
 		padding: 150px 0px;
@@ -16,29 +17,36 @@
 	&__inner {
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
 
 		@media (max-width: 1400px) {
 			margin: -10px;
 		}
+
+		@media (max-width: 780px) {
+			margin: -5px;
+		}
 	}
 
 	&__item {
-		flex: 0 1 33.333%;
-		padding: 10px;
+		flex: 0 1 31%;
+		margin: 10px;
 
 		@media (max-width: 1400px) {
 			height: 300px;
 		}
 
-		@media (max-width: 800px) {
+		@media (max-width: 900px) {
 			height: 250px;
+			flex: 0 1 30%;
 		}
 
-		@media (max-width: 700px) {
-			flex: 0 1 50%;
+		@media (max-width: 780px) {
+			flex: 0 1 46%;
+			margin: 5px;
 		}
 
-		@media (max-width: 500px) {
+		@media (max-width: 480px) {
 			flex: 0 1 100%;
 		}
 	}

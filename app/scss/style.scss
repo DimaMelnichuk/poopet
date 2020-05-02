@@ -15,15 +15,13 @@
 @import "blocks/accordion";
 @import "blocks/main/text";
 @import "blocks/social-links";
+@import "blocks/scroll-top";
 
 // Header
 @import "blocks/header/header";
 @import "blocks/header/header-top";
 @import "blocks/header/menu";
 
-
-
-@import "blocks/support";
 
 // Main-sections
 @import "blocks/main/intro";
@@ -56,6 +54,7 @@
 @import "pages/news-detail/sidebar/post-sidebar";
 @import "pages/news-detail/sidebar/tags-sidebar";
 @import "pages/sponsor";
+@import "pages/page-error";
 
 // Footer
 @import "blocks/footer/footer";
@@ -77,6 +76,7 @@ a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+main{overflow: hidden;}
 
 .container {
   max-width: 1200px;

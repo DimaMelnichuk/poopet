@@ -1,5 +1,29 @@
 $(function(){
 
+	// Scroll to a Specific Div
+	if($('.scroll-to-target').length){
+		$(".scroll-to-target").on('click', function() {
+			var target = $(this).attr('data-target');
+			// animate
+			$('html, body').animate({
+				scrollTop: $(target).offset().top
+				}, 1000);
+	
+		});
+	}
+	/***************** Scroll to Top ********************/
+	$(window).on('scroll', function() {
+		if($('.header').length){
+			var windowpos = $(window).scrollTop();
+			var scrollLink = $('.scroll-top');
+			if (windowpos >= 110) {
+				scrollLink.addClass('open');
+			} else {
+				scrollLink.removeClass('open');
+			}
+		}
+	});
+
    /***************** Menu-btn ********************/
    $(".menu__burger").click(function(event){
 		$(".menu__burger,.menu").toggleClass("active");
