@@ -1,6 +1,12 @@
 .header-top {
 	background: #3B3634;
 	color: $white;
+	position: relative;
+	z-index: 6;
+
+	@media (max-width: 1000px) {
+		z-index: 7;
+	}
 	// .header-top__row
 
 	&__row {
