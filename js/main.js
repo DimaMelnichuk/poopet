@@ -1,5 +1,17 @@
 $(function(){
 
+	$(window).scroll(function() {
+		var scroll = $(window).scrollTop();
+	
+		if (scroll >= 65) {
+		  $('.header__content').addClass('fixed');
+		  $('.header__logo').addClass('fixed');
+		} else {
+		  $('.header__content').removeClass('fixed');
+		  $('.header__logo').removeClass('fixed');
+		}
+		 });
+
 	// Scroll to a Specific Div
 	if($('.scroll-to-target').length){
 		$(".scroll-to-target").on('click', function() {
@@ -27,6 +39,7 @@ $(function(){
    /***************** Menu-btn ********************/
    $(".menu__burger").click(function(event){
 		$(".menu__burger,.menu").toggleClass("active");
+		$("body").toggleClass("lock");
 		});
  
 
@@ -40,8 +53,7 @@ $(function(){
 	$('.testimonial__slider').slick({
 		arrows: false,
 		dots: true,
-		autoplay: true,
-		autoplaySpeed: 2000,
+		adaptiveHeight: true,
 	});
 
 	$('.gallery__slider').slick({
