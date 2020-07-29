@@ -2,6 +2,10 @@
 	padding: 150px 0 110px;
 	background: #3B3634;
 
+	@media (max-width: 1400px) {
+		padding: 90px 0 70px;
+	}
+
 	@media (max-width: 1000px) {
 		padding: 70px 0 70px;
 	}

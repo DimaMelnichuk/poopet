@@ -3,6 +3,18 @@
 	margin: 0 auto;
 	text-align: center;
 
+	@media (max-width: 1400px) {
+		padding: 90px 0 50px;
+	}
+
+	@media (max-width: 1000px) {
+		padding: 70px 0 50px;
+	}
+
+	@media (max-width: 480px) {
+		padding: 50px 0 30px;
+	}
+
 	&__google-map {
 		max-width: 100%;
 		width: 100%;

@@ -70,15 +70,24 @@
 		}
 
 		.slick-dots li{
-			font-size: 0;
-			margin: 0 5px;
+			margin: 0 10px 0px 0px;
+
+			&:last-child {
+				margin: 0px 0px 0px 0px;
+			}
+		}
+
+		.slick-dots button{
 			height: 10px;
 			width: 10px;
 			background: #8E8D8D;
 			border-radius: 50%;
+			outline: none;
+			font-size: 0;
+			padding: 0;
 		}
 
-		.slick-dots li.slick-active{
+		.slick-dots li.slick-active button{
 			background: $white;
 		}
 		

@@ -1,6 +1,10 @@
 .news {
 	padding: 120px 0;
 
+	@media (max-width: 1400px) {
+		padding: 90px 0;
+	}
+
 	@media (max-width: 1000px) {
 		padding: 70px 0 70px;
 	}
@@ -17,16 +21,8 @@
 
 	&__inner {
 		display: flex;
-		margin: 0 -15px;
-		justify-content: space-between;
-
-		@media (max-width: 650px) {
-			flex-direction: column;
-		}
-
-		@media (max-width: 650px) {
-			margin: 15px 0;
-		}
+		margin: -15px;
+		flex-flow: row wrap;
 	}
 
 	// .news__item
@@ -35,18 +31,14 @@
 		display: flex;
 		flex-direction: column;
 		flex: 0 1 33.333%;
-		padding: 0 15px;
+		padding: 15px;
 
 		@media (max-width: 1400px) {
 			flex: 0 1 33.333%;
 		}
 
-		@media (max-width: 800px) {
+		@media (max-width: 900px) {
 			flex: 0 1 50%;
-		}
-
-		@media (max-width: 650px) {
-			padding: 15px 0;
 		}
 
 		@media (max-width: 550px) {

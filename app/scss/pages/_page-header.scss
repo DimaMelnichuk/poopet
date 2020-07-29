@@ -4,9 +4,20 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 290px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@media (max-width: 1400px) {
+		height: 250px;
+	}
+
+	@media (max-width: 1000px) {
+		height: 200px;
+	}
 
 	@media (max-width: 480px) {
-		height: 200px;
+		height: 150px;
 	}
 
 	&::before {
@@ -26,11 +37,8 @@
 		font-size: 70px;
 		text-transform: uppercase;
 		font-family: $font-family-passion;
-		text-align: center;
-		line-height: 290px;
 
 		@media (max-width: 480px) {
-			line-height: 200px;
 			font-size: 50px;
 		}
 	}

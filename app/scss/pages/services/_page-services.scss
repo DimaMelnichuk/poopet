@@ -2,7 +2,15 @@
 	background: #F2F1F0;
 	padding: 150px 0 120px;
 
+	@media (max-width: 1400px) {
+		padding: 90px 0;
+	}
+
+	@media (max-width: 780px) {
+		padding: 70px 0px;
+	}
+
 	@media (max-width: 480px) {
-		padding: 70px 0;
+		padding: 50px 0px;
 	}
 }

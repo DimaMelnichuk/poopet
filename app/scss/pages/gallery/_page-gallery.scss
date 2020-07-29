@@ -2,26 +2,26 @@
 	padding: 150px 0 330px;
 	overflow: hidden;
 
+	@media (max-width: 1400px) {
+		padding: 90px 0 250px;
+	}
+
 	@media (max-width: 1000px) {
-		padding: 150px 0px;
+		padding: 80px 0;
 	}
 
 	@media (max-width: 780px) {
-		padding: 90px 0px;
+		padding: 70px 0px;
 	}
 
 	@media (max-width: 480px) {
-		padding: 70px 0;
+		padding: 70px 0px 50px;
 	}
 
 	&__inner {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;
-
-		@media (max-width: 1400px) {
-			margin: -10px;
-		}
+		margin: -10px;
 
 		@media (max-width: 780px) {
 			margin: -5px;
@@ -65,8 +65,4 @@
     		padding: 20px 50px;
 		}	
 	}
-}
-
-.gallery__box--none {
-	display: none;
 }

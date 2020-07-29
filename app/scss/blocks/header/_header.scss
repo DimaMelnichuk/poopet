@@ -16,15 +16,6 @@
 		&.fixed {
 			position: fixed;
 			top: 0;
-			height: 90px;
-
-			@media (max-width: 1400px) {
-				height: 65px;
-			}
-
-			@media (max-width: 500px) {
-				height: 60px;
-			}
 		}
 
 		@media (max-width: 1400px) {
@@ -44,6 +35,10 @@
 			left: 0;
 		}
 
+		@media (max-width: 500px) {
+			height: 60px;
+		}
+
 		&::before {
 			content: "";
 			position: absolute;
@@ -54,6 +49,10 @@
 			right: 0;
 			border-bottom: 1px solid #CECDCC;
 			border-radius: 0 70px 70px 0;
+
+			@media (max-width: 1400px) {
+				height: 90px;
+			}
 
 			@media (max-width: 1000px) {
 				display: none;
@@ -106,9 +105,15 @@
 		@media (max-width: 1400px) {
 			height: 65px;
 		}
+
+		@media (max-width: 500px) {
+			height: 60px;
+		}
 	}
 
 	&__content-links {
+		position: relative;
+		z-index: 101;
 
 		@media (max-width: 1000px) {
 			margin-right: 50px;

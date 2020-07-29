@@ -1,18 +1,30 @@
 .page-about {
-	padding: 150px 0px 0px 0px;
+	padding: 150px 0px;
+
+	@media (max-width: 1400px) {
+		padding: 90px 0;
+	}
 
 	@media (max-width: 780px) {
-		padding: 90px 0px;
+		padding: 70px 0px;
 	}
 
 	@media (max-width: 480px) {
-		padding: 70px 0px 0px 0px;
+		padding: 50px 0px;
 	}
 	// .page-about__box
 
 	&__box {
 		position: relative;
 		margin-bottom: 100px;
+
+		@media (max-width: 1400px) {
+			margin-bottom: 80px;
+		}
+
+		@media (max-width: 1000px) {
+			margin-bottom: 70px;
+		}
 
 		@media (max-width: 480px) {
 			margin-bottom: 70px;
@@ -64,6 +76,9 @@
 		margin-bottom: 65px;
 	}
 
+	&__text {
+		margin-bottom: 0;
+	}
 	// .page-about__text-subtitle
 
 	&__text-subtitle {
