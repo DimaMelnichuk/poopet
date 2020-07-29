@@ -43,11 +43,21 @@ $(function(){
 		});
  
 
+	/***************** Mobile-menu ********************/
+	$(".menu__link-dropdown").click(function(event){
+		if($(".menu__link-dropdown").hasClass("active")){
+			$(".menu__link-dropdown").not($(this)).removeClass("active");
+			$(".menu__submenu").not($(this).next()).slideUp(300);
+		}
+		$(this).toggleClass("active").next().slideToggle(300);
+	});
+
 	/***************** intro-slider ********************/
 	$('.intro__slider').slick({
 		dots: true,
 		fade: true,
 		cssEase: 'linear',
+		lazyLoad: 'ondemand',
 	});
 
 	$('.testimonial__slider').slick({
@@ -64,6 +74,7 @@ $(function(){
 		autoplay: true,
 		autoplaySpeed: 2000,
 		cssEase: 'ease-out',
+		lazyLoad: 'ondemand',
 		responsive: [
 			{
 			  breakpoint: 1000,
