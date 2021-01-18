@@ -1,17 +1,5 @@
 $(function(){
 
-	$(window).scroll(function() {
-		var scroll = $(window).scrollTop();
-	
-		if (scroll >= 65) {
-		  $('.header__content').addClass('fixed');
-		  $('.header__logo').addClass('fixed');
-		} else {
-		  $('.header__content').removeClass('fixed');
-		  $('.header__logo').removeClass('fixed');
-		}
-		 });
-
 	// Scroll to a Specific Div
 	if($('.scroll-to-target').length){
 		$(".scroll-to-target").on('click', function() {
@@ -103,3 +91,18 @@ $(function(){
 		 ]
 	});
 });
+
+window.onscroll = function() {headerFixed()};
+var header = document.querySelector(".header__content");
+var headerContainer = document.querySelector(".header__logo");
+var sticky = header.offsetTop;
+
+function headerFixed() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("fixed");
+    headerContainer.classList.add("fixed");
+  } else {
+    header.classList.remove("fixed");
+    headerContainer.classList.remove("fixed");
+  }
+}
