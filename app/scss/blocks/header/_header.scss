@@ -16,6 +16,28 @@
 		&.fixed {
 			position: fixed;
 			top: 0;
+			height: 95px;
+
+			@media (max-width: 1400px) {
+				height: 65px;
+			}
+
+			@media (max-width: 500px) {
+				height: 60px;
+			}
+
+			&::before {
+				height: 95px;
+
+				@media (max-width: 1400px) {
+					height: 65px;
+				}
+
+				@media (max-width: 500px) {
+					height: 60px;
+				}
+			}
+
 		}
 
 		@media (max-width: 1400px) {
@@ -47,6 +69,7 @@
 			height: 130px;
 			background: $white;
 			right: 0;
+			top: 0;
 			border-bottom: 1px solid #CECDCC;
 			border-radius: 0 70px 70px 0;
 
@@ -92,6 +115,12 @@
 			top: 0;
 			width: 100%;
 			z-index: 6;
+
+			@media (max-width: 1000px) {				
+				.menu {
+					padding: 80px 0px 30px 0px;
+				}
+			}
 		}
 	}
 

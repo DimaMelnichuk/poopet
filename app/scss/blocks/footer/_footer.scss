@@ -170,6 +170,7 @@
 
 		&:hover {
 			color: $orange;
+			text-decoration: underline;
 		}
 	}
 
@@ -219,6 +220,7 @@
 		background: $red;
 		color: $white;
 		line-height: 52px;
+		transition: background .2s;
 
 		@media (max-width: 1400px) {
 			top: 7px;
@@ -227,9 +229,12 @@
 			line-height: 47px;
 		}
 
-		&:hover {
-			background: $green;
+		@media (min-width: 1000px) {			
+			&:hover {
+				background: $green;
+			}
 		}
+
 	}
 
 	// .footer__copyright

@@ -44,12 +44,12 @@ $(function(){
  
 
 	/***************** Mobile-menu ********************/
-	$(".menu__link-dropdown").click(function(event){
-		if($(".menu__link-dropdown").hasClass("active")){
-			$(".menu__link-dropdown").not($(this)).removeClass("active");
-			$(".menu__submenu").not($(this).next()).slideUp(300);
+	$(".menu__item-dropdown").click(function(e){
+		
+		if($(".menu__item-dropdown").hasClass("active")){
+			$(".menu__item-dropdown").not($(this)).removeClass("active");
 		}
-		$(this).toggleClass("active").next().slideToggle(300);
+		$(this).toggleClass("active");
 	});
 
 	/***************** intro-slider ********************/

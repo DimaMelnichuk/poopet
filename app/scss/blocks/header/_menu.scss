@@ -11,7 +11,7 @@
 		width: 100%;
 		height: 100%;
 		display: flex;
-		padding: 65px 0px 30px 0px;
+		padding: 150px 0px 30px 0px;
 		justify-content: center;
 		text-align: center;
 		overflow-x: auto;
@@ -20,7 +20,7 @@
 		transition: transform 0.6s ease 0s;
 
 		&.menu.active {
-			transform: translateY(9%);
+			transform: translateY(0%);
 		}
 	}
 	// .menu__list
@@ -39,6 +39,19 @@
 	&__item {
 		display: flex;
 		font-weight: 600;
+
+		@media (min-width: 1000px) {	
+			&:hover  {
+				.menu__submenu {
+					opacity: 1;
+					visibility: visible;
+				}
+				.menu__link-dropdown {
+					color: $red;
+				}
+			}		
+
+		}
 
 		@media (max-width: 1000px) {
 			font-size: 35px;
@@ -65,6 +78,7 @@
 		padding: 39px 0px;
 		color: #3B3634;
 		text-transform: capitalize;
+		transition: color .2s;
 
 		@media (max-width: 1400px) {
 			padding: 25px 0px;
@@ -74,8 +88,10 @@
 			padding: 0;
 		}
 
-		&:hover {
-			color: $red;
+		@media (min-width: 1000px) {			
+			&:hover {
+				color: $red;
+			}
 		}
 	}
 
@@ -84,10 +100,12 @@
 		top: 99%;
 		width: 250px;
 		z-index: 100;
-		display: none;
 		background: #ffffff;
 		border-top: 3px solid $red;
 		box-shadow: 0px 0px 10px rgba(0,0,0,0.10);
+		opacity: 0;
+		visibility: hidden;
+		transition: all .3s;
 
 		@media (max-width: 1000px) {
 			display: none;
@@ -110,20 +128,15 @@
 			border: none;
 		}
 		 
-		&:hover {
-			background: $red;
-		}
-	}
-
-	&__item:hover .menu__submenu{
-		display: block;
-
-		@media (max-width: 1000px) {
-			display: none;
+		@media (min-width: 1000px) {			
+			&:hover {
+				background: $red;
+			}
 		}
 	}
 
 	&__submenu-link {
+		width: 100%;
 		padding: 15px 30px;
 		font-weight: 400;
 		transition: color .3s ease, transform .3s ease;
@@ -133,16 +146,43 @@
 			font-size: 18px;
 		}
 
-		&:hover {
-			color: $white;
-			transform: translateX(10px);
+		@media (min-width: 1000px) {			
+			&:hover {
+				color: $white;
+				transform: translateX(10px);
+			}
 		}
+
 	}
 
-	&__link-dropdown {
-
+	&__item-dropdown {
+		
 		&.active {
 			color: $red;
+
+			.menu__dropdown {
+				display: block;
+			}
+		}
+
+		@media (max-width: 1000px) {
+			&.active {
+				.menu__link-dropdown {
+					color: $red;
+				}
+				.menu__submenu { 
+					opacity: 1;
+					display: block;
+					visibility: visible;
+				}
+				.menu__item {
+					margin: 15px 0px;
+
+					&:last-child {
+						margin: 0;
+					}
+				}
+			}
 		}
 	}
 

@@ -120,6 +120,7 @@
 
 	&__link {
 		color: $white;
+		transition: color .2s;
 
 		&:hover {
 			color: $red;
