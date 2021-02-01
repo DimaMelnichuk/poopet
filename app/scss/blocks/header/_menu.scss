@@ -141,16 +141,16 @@
 		font-weight: 400;
 		transition: color .3s ease, transform .3s ease;
 
-		@media (max-width: 1000px) {
-			padding: 10px;
-			font-size: 18px;
-		}
-
 		@media (min-width: 1000px) {			
 			&:hover {
 				color: $white;
 				transform: translateX(10px);
 			}
+		}
+
+		@media (max-width: 1000px) {
+			padding: 10px;
+			font-size: 18px;
 		}
 
 	}
