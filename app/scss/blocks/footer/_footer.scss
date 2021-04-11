@@ -114,45 +114,6 @@
 		}
 	}
 
-	// .footer__content-link
-
-	&__content-link {
-		position: relative;
-		padding-left: 10px;
-		color: #3b3634;
-		text-transform: capitalize;
-		line-height: 36px;
-
-		@media (max-width: 1400px) {
-			line-height: 30px;
-		}
-
-		@media (max-width: 500px) {
-			line-height: 24px;
-		}
-
-		&::before {
-			content: "";
-			position: absolute;
-			left: 0;
-			top: 50%;
-			transform: translateY(-50%);
-			height: 6px;
-			width: 6px;
-			background: #615E5D;
-			border-radius: 50%;
-		}
-
-		&:hover {
-			font-weight: $bold;
-
-			&::before {
-				background: $red;
-			}
-		}
-
-	}
-
 	// .footer__content-contact
 
 	&__content-contact {
@@ -163,10 +124,9 @@
 		}
 	}
 
-	&__content-email,
-	&__content-phone {
+	&__content-link {
 		color: $red;
-		display: block;
+		display: inline-block;
 
 		&:hover {
 			color: $orange;
@@ -212,21 +172,24 @@
 
 	&__form-btn {
 		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		top: 11px;
+		font-size: 0;
 		right: 10px;
 		height: 50px;
 		width: 50px;
 		border-radius: 50%;
 		background: $red;
 		color: $white;
-		line-height: 52px;
+		cursor: pointer;
 		transition: background .2s;
 
 		@media (max-width: 1400px) {
 			top: 7px;
 			height: 45px;
 			width: 45px;
-			line-height: 47px;
 		}
 
 		@media (min-width: 1000px) {			
@@ -235,12 +198,28 @@
 			}
 		}
 
+		&:before {
+			content: '\e801';
+			font-family: "fontello";
+			position: absolute;
+			font-size: 15px;
+			font-weight: 500;
+	  }
+
 	}
 
 	// .footer__copyright
 
 	&__copyright {
 		background: #3B3634;
+	}
+
+	// .footer__copyright-text
+
+	&__copyright-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		text-align: center;
 		color: $white;
 		height: 90px;
@@ -252,6 +231,47 @@
 			height: 50px;
 			line-height: 50px;
 			font-size: 13px;
+		}
+	}
+}
+.footer-nav {
+
+	// .footer-nav__link
+
+	&__link {
+		position: relative;
+		padding-left: 10px;
+		color: #3b3634;
+		text-transform: capitalize;
+		line-height: 36px;
+		transition: all .3s;
+
+		@media (max-width: 1400px) {
+			line-height: 30px;
+		}
+
+		@media (max-width: 500px) {
+			line-height: 24px;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			height: 6px;
+			width: 6px;
+			background: #615E5D;
+			border-radius: 50%;
+		}
+
+		&:hover {
+			font-weight: $bold;
+
+			&::before {
+				background: $red;
+			}
 		}
 	}
 }

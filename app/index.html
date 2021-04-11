@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
 	<meta charset=utf-8>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,12 +14,6 @@
 
 	<!-- header -->
 	<header class="header">
-
-		<!-- header__logo -->
-		<a class="header__logo" href="index.html">
-			<img class="header__logo-link" src="img/header/logo.png" alt="">
-		</a>
-		<!-- header__logo end -->
 
 		<!-- header-top-->
 		<div class="header-top">
@@ -68,6 +60,12 @@
 			<div class="container">
 
 				<div class="header__content-row">
+
+					<!-- header__logo -->
+					<a class="header__logo" href="index.html">
+						<img class="header__logo-link" src="img/header/logo.png" alt="">
+					</a>
+					<!-- header__logo end -->
 
 					<!-- menu -->
 					<nav class="menu">
@@ -624,19 +622,23 @@
 		<!-- contact -->
 		<div class="contact">
 			<!-- container -->
-			<div class="container">
+			<div class="container-contact">
 				<div class="text title-icon">
 					<div class="text__subtitle">Contact with Us</div>
 					<div class="text__title">Make an Appointment</div>
 				</div>
 				<!-- contact__form -->
 				<form class="contact__form" action="#">
+					<div class="contact__form-column">
 						<input class="contact__form-text" type="text" placeholder="Full name" required>
 						<input class="contact__form-email" type="email" placeholder="Email address" required>
+					</div>
+					<div class="contact__form-column">
 						<input class="contact__form-number" type="tel" placeholder="Phone number" required>
 						<input class="contact__form-text" type="text" placeholder="Subject" required>
-						<textarea class="contact__input-message" name="#" placeholder="Write here message" required></textarea>
-						<button class="contact__form-btn btn btn-primary" >Submit request</button>
+					</div>
+					<textarea class="contact__input-message" name="#" placeholder="Write here message" required></textarea>
+					<button class="contact__form-btn btn btn-primary" >Submit request</button>
 				</form>
 				<!-- contact__form end -->
 			</div>
@@ -681,26 +683,30 @@
 						<!-- footer__content-column -->
 						<div class="footer__content-column">
 							<div class="footer__content-title">Explore</div>
-							<ul class="footer__content-list">                   
-								<li class="footer__content-item"><a href="#" class="footer__content-link">Home</a></li>
-								<li class="footer__content-item"><a href="#" class="footer__content-link">About</a></li>
-								<li class="footer__content-item"><a href="#" class="footer__content-link">Services</a></li>
-								<li class="footer__content-item"><a href="#" class="footer__content-link">Gallery</a></li>
-								<li class="footer__content-item"><a href="#" class="footer__content-link">News</a></li>
-								<li class="footer__content-item"><a href="#" class="footer__content-link">contact</a></li>
-							</ul>
+							<div class="footer__content-nav footer-nav">
+								<ul class="footer-nav__list">                   
+									<li class="footer-nav__item"><a href="#" class="footer-nav__link">Home</a></li>
+									<li class="footer-nav__item"><a href="#" class="footer-nav__link">About</a></li>
+									<li class="footer-nav__item"><a href="#" class="footer-nav__link">Services</a></li>
+									<li class="footer-nav__item"><a href="#" class="footer-nav__link">Gallery</a></li>
+									<li class="footer-nav__item"><a href="#" class="footer-nav__link">News</a></li>
+									<li class="footer-nav__item"><a href="#" class="footer-nav__link">contact</a></li>
+								</ul>
+							</div>
 						</div>
 						<!-- footer__content-column end -->
 						<!-- footer__content-column -->
 						<div class="footer__content-column">
 							<div class="footer__content-title">Links</div>
-							<ul class="footer__content-list">
-								<li class="footer__content-item"><a href="#" class="footer__content-link">FAQs</a></li>
-								<li class="footer__content-item"><a href="#" class="footer__content-link">Help</a></li>
-								<li class="footer__content-item"><a href="#" class="footer__content-link">Privacy Policy</a></li>
-								<li class="footer__content-item"><a href="#" class="footer__content-link">Terms of Use</a></li>
-								<li class="footer__content-item"><a href="#" class="footer__content-link">Site map</a></li>
-							</ul>
+							<div class="footer__content-nav footer-nav">
+								<ul class="footer-nav__list">
+									<li class="footer-nav__item"><a href="#" class="footer-nav__link">FAQs</a></li>
+									<li class="footer-nav__item"><a href="#" class="footer-nav__link">Help</a></li>
+									<li class="footer-nav__item"><a href="#" class="footer-nav__link">Privacy Policy</a></li>
+									<li class="footer-nav__item"><a href="#" class="footer-nav__link">Terms of Use</a></li>
+									<li class="footer-nav__item"><a href="#" class="footer-nav__link">Site map</a></li>
+								</ul>
+							</div>
 						</div>
 						<!-- footer__content-column end -->
 						<!-- footer__content-column -->
@@ -708,8 +714,12 @@
 							<div class="footer__content-title">contact</div>
 							<div class="footer__content-contact">
 								Contact  660 Broklyn Street, 88 New York 
-								<a class="footer__content-email" href="mailto:needhelp@poopet.com">needhelp@poopet.com</a>
-								<a class="footer__content-phone" href="tel:6668880000">666 888 0000</a>
+								<div class="footer__content-email">
+									<a class="footer__content-link" href="mailto:needhelp@poopet.com">needhelp@poopet.com</a>
+								</div>
+								<div class="footer__content-phone">
+									<a class="footer__content-link" href="tel:6668880000">666 888 0000</a>
+								</div>
 							</div>
 						</div>
 						<!-- footer__content-column end -->
@@ -719,7 +729,7 @@
 							<div class="footer__content-about">When you visit our practice, you will find plenty of convenient off-street parking.  If you need help getting your pet in and out of the car, our nurses are more than happy to help you.</div>
 							<form class="footer__content-form" action="#">
 								<input class="footer__form-email" type="email" placeholder="Email address" required>
-								<button class="footer__form-btn btn"><i class="footer__content-icon icon-right-open"></i></button>
+								<button class="footer__form-btn btn"></button>
 							</form>
 						</div>
 						<!-- footer__content-column end -->
@@ -731,7 +741,9 @@
 			<!-- footer__copyright -->
 			<div class="footer__copyright">
 				<div class="container">
-				© 2020 Copyrights
+					<div class="footer__copyright-text">
+						© 2020 Copyrights
+					</div>
 				</div>
 			</div>
 			<!-- footer__copyright end -->
@@ -745,15 +757,10 @@
 	</a>
 	<!-- scroll-top -->
 
-	<!-- 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script>
-    window.jQuery || document.write('<script src="/js/jquery-3.4.1.min.js"><\/script>')
-	</script> -->
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/libs.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 	<script src="js/fancybox.js"></script>
 </body>
-
 </html>

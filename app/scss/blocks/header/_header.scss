@@ -4,9 +4,9 @@
 	&__logo {
 		display: flex;
 		align-items: center;
-		z-index: 7;
+		z-index: 999;
 		position: absolute;
-		top: 30px;
+		top: -65px;
 		left: 10%;
 		width: 270px;
 		height: 130px;
@@ -42,7 +42,7 @@
 
 		@media (max-width: 1400px) {
 			height: 80px;
-			top: 25px;
+			top: -40px;
 			left: 5%;
 			width: 270px;
 		}
@@ -53,8 +53,8 @@
 
 		@media (max-width: 1000px) {
 			height: 65px;
-			top: 65px;
 			left: 0;
+			top: 0px;
 		}
 
 		@media (max-width: 500px) {

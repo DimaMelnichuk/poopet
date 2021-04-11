@@ -1,5 +1,5 @@
 // Fonts
-@import url(https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Passion+One:wght@400;700&family=Schoolbell&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Passion+One:wght@400;700&family=Schoolbell&display=swap");
 
 // Partials
 @import "partials/libs";
@@ -21,7 +21,6 @@
 @import "blocks/header/header";
 @import "blocks/header/header-top";
 @import "blocks/header/menu";
-
 
 // Main-sections
 @import "blocks/main/intro";
@@ -83,7 +82,11 @@ main{overflow: hidden;}
   margin: 0 auto;
   padding: 0 15px;
 }
-
+.container-contact {
+	max-width: 815px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
 body.lock {
 	overflow: hidden;
 }
